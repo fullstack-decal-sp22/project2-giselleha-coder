@@ -1,46 +1,63 @@
-.total-size {
-  padding: 0;
-  margin: 0;
-}
-.result-screen {
-  height: 15%;
-  top: 50px;
-  background-color: black;
-  padding-right: 8px;
-  display: flex;
-  color: white;
+.calc {
+  max-width: 400px;
+  margin: 10vh auto 0 auto;
+ 
+ 
   font-size: 40px;
   font-family: monospace;
   justify-content: flex-end;
-  align-items: center;
-}
-.calc {
-  width: 400px;
-  height: 500px;
-  background-color: black;
-}
-#zero-button {
-  width: 75%;
+  
 }
 
-#c-button {
-  width: 50%;
+#result-screen {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  padding: 16px 8px;
+  font-size: 25px;
+  background-color: black;
+  font-size: 40px;
+  font-family: monospace;
+  justify-content: flex-end;
+  color:white
+  
+
 }
 
 .buttons {
-  width: 100px;
-  font-size: 40px;
+  display: grid;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.calc-rows {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  height: 85%;
+.buttons > div {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
 }
-#last-buttons {
+
+.button {
+  border: 0.5px solid black;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  font-size: 40px;
+  font-family: monospace;
+  justify-content: flex-end;
+  background-color: #D3D3D3;
+  color: black;
+}
+#arith-button {
   background-color: #df974c;
   color: white;
+  
 }
-#last-buttons:hover {
+#arith-button:hover{
   background-color: #dfb07e;
+}
+
+
+.button:hover {
+  background-color: #E5E4E2;
 }
